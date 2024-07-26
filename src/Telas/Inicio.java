@@ -34,6 +34,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.YES_OPTION;
 import javax.swing.JPanel;
@@ -97,6 +98,7 @@ public final class Inicio extends javax.swing.JFrame {
         txtSenha = new javax.swing.JPasswordField();
         jPanel10 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         LbUsuario = new javax.swing.JLabel();
@@ -525,7 +527,6 @@ public final class Inicio extends javax.swing.JFrame {
         jPanel40 = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
-        panelRound13 = new CassesAdicionais.PanelRound();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -544,11 +545,11 @@ public final class Inicio extends javax.swing.JFrame {
 
         jPanel8.setLayout(new java.awt.CardLayout());
 
-        jPanel9.setBackground(new java.awt.Color(153, 255, 255));
+        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/login.png"))); // NOI18N
-        jPanel9.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 90, 170, 160));
+        jPanel9.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 80, 170, 160));
 
         panelRound31.setBackground(new java.awt.Color(255, 255, 255));
         panelRound31.setRoundBottomLeft(25);
@@ -660,15 +661,20 @@ public final class Inicio extends javax.swing.JFrame {
 
         panelRound31.add(panelRound32, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 350, 210));
 
-        jPanel9.add(panelRound31, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, 360, 220));
+        jPanel9.add(panelRound31, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, 360, 220));
 
         jPanel10.setBackground(new java.awt.Color(153, 0, 153));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/ImgGestao.png"))); // NOI18N
-        jPanel10.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 410, 470));
+        jPanel10.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 390, 410));
 
-        jPanel9.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 570));
+        jPanel9.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 570));
+
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel47.setText("x");
+        jPanel9.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 0, -1, 20));
 
         jPanel8.add(jPanel9, "cardLogin");
 
@@ -3836,35 +3842,15 @@ public final class Inicio extends javax.swing.JFrame {
 
         jPanel8.add(jPanel2, "cardInicio");
 
-        panelRound13.setBackground(new java.awt.Color(102, 204, 255));
-        panelRound13.setRoundTopLeft(15);
-        panelRound13.setRoundTopRight(15);
-
-        javax.swing.GroupLayout panelRound13Layout = new javax.swing.GroupLayout(panelRound13);
-        panelRound13.setLayout(panelRound13Layout);
-        panelRound13Layout.setHorizontalGroup(
-            panelRound13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1039, Short.MAX_VALUE)
-        );
-        panelRound13Layout.setVerticalGroup(
-            panelRound13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 41, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panelRound13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(panelRound13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -5824,7 +5810,8 @@ public final class Inicio extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             Inicio inicio = new Inicio();
-            inicio.setShape(new RoundRectangle2D.Double(0,0,1040, 603, 15, 15));
+            // Definir o JFrame para ser maximizado
+            inicio.setShape(new RoundRectangle2D.Double(0,0,1040, 570, 15, 15));
             inicio.setVisible(true);
             inicio.setResizable(true);
             inicio.setLocationRelativeTo(null);
@@ -6404,6 +6391,7 @@ public final class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
@@ -6503,7 +6491,6 @@ public final class Inicio extends javax.swing.JFrame {
     private CassesAdicionais.PanelRound panelRound10;
     private CassesAdicionais.PanelRound panelRound11;
     private CassesAdicionais.PanelRound panelRound12;
-    private CassesAdicionais.PanelRound panelRound13;
     private CassesAdicionais.PanelRound panelRound14;
     private CassesAdicionais.PanelRound panelRound15;
     private CassesAdicionais.PanelRound panelRound16;
