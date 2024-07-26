@@ -20,7 +20,6 @@ import ClassesDao.ProdutoDao;
 import ClassesDao.VendasDao;
 import com.GestaoInfocell.ConexaoBD.ConexaoJDBC;
 import java.awt.CardLayout;
-import java.awt.Color;
 import java.awt.HeadlessException;
 import java.awt.Image;
 import java.awt.geom.RoundRectangle2D;
@@ -82,7 +81,6 @@ public final class Inicio extends javax.swing.JFrame {
 
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
-        jLabel36 = new javax.swing.JLabel();
         panelRound31 = new CassesAdicionais.PanelRound();
         panelRound32 = new CassesAdicionais.PanelRound();
         CbRemember4 = new javax.swing.JCheckBox();
@@ -96,6 +94,7 @@ public final class Inicio extends javax.swing.JFrame {
         jLabel43 = new javax.swing.JLabel();
         LbVerSenha = new javax.swing.JLabel();
         txtSenha = new javax.swing.JPasswordField();
+        jLabel36 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
@@ -545,11 +544,8 @@ public final class Inicio extends javax.swing.JFrame {
 
         jPanel8.setLayout(new java.awt.CardLayout());
 
-        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/login.png"))); // NOI18N
-        jPanel9.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 80, 170, 160));
 
         panelRound31.setBackground(new java.awt.Color(255, 255, 255));
         panelRound31.setRoundBottomLeft(25);
@@ -567,18 +563,18 @@ public final class Inicio extends javax.swing.JFrame {
 
         CbRemember4.setForeground(new java.awt.Color(255, 255, 255));
         CbRemember4.setText("Remember-me");
-        panelRound32.add(CbRemember4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, 30));
+        panelRound32.add(CbRemember4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, -1, 30));
 
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("Forgot Password?");
-        panelRound32.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, 30));
+        panelRound32.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, -1, 30));
 
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/user.png"))); // NOI18N
-        panelRound32.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, 25));
+        panelRound32.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 25));
 
         jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/padlock.png"))); // NOI18N
-        panelRound32.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 25, 25));
-        panelRound32.add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 260, 30));
+        panelRound32.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 25, 25));
+        panelRound32.add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 260, 30));
 
         panelRound33.setBackground(new java.awt.Color(0, 71, 54));
         panelRound33.setRoundBottomLeft(25);
@@ -595,16 +591,16 @@ public final class Inicio extends javax.swing.JFrame {
         panelRound33Layout.setHorizontalGroup(
             panelRound33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound33Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGap(25, 25, 25)
                 .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         panelRound33Layout.setVerticalGroup(
             panelRound33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel42, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        panelRound32.add(panelRound33, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 100, 30));
+        panelRound32.add(panelRound33, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 410, 120, 30));
 
         panelRound34.setBackground(new java.awt.Color(0, 71, 54));
         panelRound34.setRoundBottomLeft(25);
@@ -626,16 +622,16 @@ public final class Inicio extends javax.swing.JFrame {
         panelRound34Layout.setHorizontalGroup(
             panelRound34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound34Layout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
-                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13))
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addComponent(jLabel43)
+                .addGap(33, 33, 33))
         );
         panelRound34Layout.setVerticalGroup(
             panelRound34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        panelRound32.add(panelRound34, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 120, 30));
+        panelRound32.add(panelRound34, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, 120, 30));
 
         LbVerSenha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/visible_1.png"))); // NOI18N
         LbVerSenha.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -643,7 +639,7 @@ public final class Inicio extends javax.swing.JFrame {
                 LbVerSenhaMouseClicked(evt);
             }
         });
-        panelRound32.add(LbVerSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 20, 30));
+        panelRound32.add(LbVerSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 340, 20, 30));
 
         txtSenha.addInputMethodListener(new java.awt.event.InputMethodListener() {
             public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
@@ -657,13 +653,16 @@ public final class Inicio extends javax.swing.JFrame {
                 txtSenhaActionPerformed(evt);
             }
         });
-        panelRound32.add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 260, 30));
+        panelRound32.add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 260, 30));
 
-        panelRound31.add(panelRound32, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 350, 210));
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/login.png"))); // NOI18N
+        panelRound32.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 170, 160));
 
-        jPanel9.add(panelRound31, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, 360, 220));
+        panelRound31.add(panelRound32, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 350, 470));
 
-        jPanel10.setBackground(new java.awt.Color(153, 0, 153));
+        jPanel9.add(panelRound31, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 40, 360, 480));
+
+        jPanel10.setBackground(new java.awt.Color(204, 255, 255));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/ImgGestao.png"))); // NOI18N
@@ -672,7 +671,7 @@ public final class Inicio extends javax.swing.JFrame {
         jPanel9.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 570));
 
         jLabel47.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel47.setForeground(new java.awt.Color(255, 255, 255));
         jLabel47.setText("x");
         jPanel9.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 0, -1, 20));
 
@@ -5810,8 +5809,9 @@ public final class Inicio extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             Inicio inicio = new Inicio();
-            // Definir o JFrame para ser maximizado
             inicio.setShape(new RoundRectangle2D.Double(0,0,1040, 570, 15, 15));
+            ImageIcon img = new ImageIcon("C:\\Users\\Heber\\Documents\\NetBeansProjects\\GestaoInfocel\\src\\Img\\ImgGestao.png");
+            inicio.setIconImage(img.getImage());
             inicio.setVisible(true);
             inicio.setResizable(true);
             inicio.setLocationRelativeTo(null);
